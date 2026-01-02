@@ -41,10 +41,12 @@ class MainClass{
         Node secondNode = new Node(2);
         Node thirdNode = new Node(3);
         Node fourthNode = new Node(4);
+        Node fifthNode = new Node(5);
         
         firstNode.left = secondNode;
         firstNode.right = thirdNode;
         secondNode.left = fourthNode;
+        secondNode.right = fifthNode;
         ArrayList<Integer> res = postorderIterative(firstNode);
         System.out.println(res);
     }
